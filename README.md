@@ -17,10 +17,11 @@ value directly into JSON or XML.
 
 ### To build:
 
-Unix/Mac/Windows (requires ant):
+    ant 
 
-    ant build
-    ant install
+### To prepare a release build:
+
+    ant release
 
 # A quick tutorial #
 Please see the Kickstart application in examples/kickstart for a complete, running example.
