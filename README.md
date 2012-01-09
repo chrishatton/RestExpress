@@ -26,10 +26,11 @@ Please see the [examples/kickstart](RestExpress/tree/master/examples/kickstart) 
 a complete, running example.
 
 HTTP Methods, if not changed in the fluent (DSL) interface, map to the following:
-1. GET --> read(Request, Response)
-2. PUT --> update(Request, Response)
-3. POST --> create(Request, Response)
-4. DELETE --> delete(Request, Response)
+
+- GET --> read(Request, Response)
+- PUT --> update(Request, Response)
+- POST --> create(Request, Response)
+- DELETE --> delete(Request, Response)
 
 You can choose to return objects from the methods, if desired, which will be returned to the client
 as body of the response.  The object will be marshaled into JSON or XML, depending on the default or
