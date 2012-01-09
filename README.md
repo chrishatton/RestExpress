@@ -9,8 +9,6 @@ Born to be simple, only three things are required to wire up a service.
 2. A RouteDeclaration extender (much like routes.rb in a Rails app), which uses a DSL for the declaration of supported URLs and HTTP methods of the service(s) in its defineRoutes() method.
 3. Service implementation(s), which is/are a simple POJO--no interface or super class implementation.
 
-See: [examples/kickstart](RestExpress/tree/master/examples/kickstart) directory to get started.
-
 RestExpress supports both [JSEND](http://labs.omniti.com/labs/jsend)-style and raw responses.  Meaning that it can wrap responses so
 AJAX clients can always process the responses easily.  Or it can simply marshal the service return
 value directly into JSON or XML. 
@@ -24,9 +22,10 @@ value directly into JSON or XML.
     ant release
 
 # A quick tutorial #
-Please see the Kickstart application in examples/kickstart for a complete, running example.
+Please see the [examples/kickstart](RestExpress/tree/master/examples/kickstart) for 
+a complete, running example.
 
-* HTTP Methods, if not changed in the fluent (DSL) interface, map to the following:
+HTTP Methods, if not changed in the fluent (DSL) interface, map to the following:
 1. GET --> read(Request, Response)
 2. PUT --> update(Request, Response)
 3. POST --> create(Request, Response)
@@ -47,6 +46,8 @@ On successful creation, call response.setResponseCreated() to set the returning 
 201.
 
 # Change History/Release Notes #
+Release notes are [available here](RestExpress/tree/master/ReleaseNotes.md)
+ 
 ## Release 0.7.2 - in development (build 'master') ##
 * Introduced DateHeaderPostprocessor which adds a Date header to responses to GET requests.
 * Introduced CacheHeaderPostprocessor which support Cache-Control and other caching-related
