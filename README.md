@@ -9,7 +9,7 @@ Born to be simple, only three things are required to wire up a service.
 2. A RouteDeclaration extender (much like routes.rb in a Rails app), which uses a DSL for the declaration of supported URLs and HTTP methods of the service(s) in its defineRoutes() method.
 3. Service implementation(s), which is/are a simple POJO--no interface or super class implementation.
 
-See: [examples/kickstart](RestExpress/examples/kickstart) directory to get started.
+See: [examples/kickstart](RestExpress/tree/master/examples/kickstart) directory to get started.
 
 RestExpress supports both [JSEND](http://labs.omniti.com/labs/jsend)-style and raw responses.  Meaning that it can wrap responses so
 AJAX clients can always process the responses easily.  Or it can simply marshal the service return
