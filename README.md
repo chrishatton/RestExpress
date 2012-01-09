@@ -15,7 +15,9 @@ RestExpress supports both [JSEND](http://labs.omniti.com/labs/jsend)-style and r
 AJAX clients can always process the responses easily.  Or it can simply marshal the service return
 value directly into JSON or XML. 
 
-### To build 
+### To build:
+
+Unix/Mac/Windows (requires ant):
 
   ant build
   ant install
