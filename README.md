@@ -19,8 +19,8 @@ value directly into JSON or XML.
 
 Unix/Mac/Windows (requires ant):
 
-  ant build
-  ant install
+    ant build
+    ant install
 
 # A quick tutorial #
 Please see the Kickstart application in examples/kickstart for a complete, running example.
