@@ -2,19 +2,23 @@
 RestExpress is a thin wrapper on the JBOSS Netty HTTP stack to provide a simple and easy way to
 create RESTful services in Java that support massive Internet Scale and performance.
 
-Born to be simple, only three things are required to wire up a service:
-1. The main class which utilizes the RestExpress DSL to create a server instance.
-2. A RouteDeclaration extender (much like routes.rb in a Rails app), which uses a DSL for the
+Born to be simple, only three things are required to wire up a service.
+1.The main class which utilizes the RestExpress DSL to create a server instance.
+2.A RouteDeclaration extender (much like routes.rb in a Rails app), which uses a DSL for the
    declaration of supported URLs and HTTP methods of the service(s) in its defineRoutes() method.
-3. Service implementation(s), which is/are a simple POJO--no interface or super class
+3.Service implementation(s), which is/are a simple POJO--no interface or super class
    implementation.
 
 See: examples/kickstart directory to get started (there is a README there).
 
-RestExpress supports both JSEND-style and raw responses.  Meaning that it can wrap responses so
+RestExpress supports both [JSEND](http://labs.omniti.com/labs/jsend)-style and raw responses.  Meaning that it can wrap responses so
 AJAX clients can always process the responses easily.  Or it can simply marshal the service return
-value directly into JSON or XML.  For more information on JSEND-style responses, see:
-[the JSEND page]( http://labs.omniti.com/labs/jsend )
+value directly into JSON or XML. 
+
+### To build 
+
+  ant build
+  ant install
 
 # A quick tutorial #
 Please see the Kickstart application in examples/kickstart for a complete, running example.
